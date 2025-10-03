@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Personal Blog Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">PB</div>
+        <div>
+          <h1>Personal Blog</h1>
+          <div class="sub">A clean responsive blog template</div>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="newPostBtn" class="btn">New Post</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="postsList"></section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <strong>Search</strong>
+          <input id="searchInput" class="input" placeholder="Search posts...">
+        </div>
+
+        <div class="card about">
+          <strong>About</strong>
+          <p class="sub">A minimal blog app with add, edit, and delete functionality.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="sub">Responsive Blog • Built with HTML, CSS, JavaScript</div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal card" id="modalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
